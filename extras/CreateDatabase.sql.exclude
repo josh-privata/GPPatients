@@ -1,0 +1,25 @@
+drop database gp_clinic;
+create database gp_clinic;
+grant SELECT, INSERT, UPDATE, DELETE ON gp_clinic.* TO 'webauth'@'localhost';
+use gp_clinic;
+create table patients
+(patientid int unsigned not null auto_increment primary key,
+  first_name varchar(50) not null,
+  last_name varchar(50) not null,
+  date_of_birth date not null,
+  sex char(1) not null,
+  address varchar(100) not null,
+  city varchar(30) not null,
+  phone varchar(20) not null
+);
+create table authorized_users
+(username varchar(20) not null primary key,
+  password varchar(40)
+);
+insert into authorized_users values 
+  ('Michael', sha1('password')
+  ('Jane', sha1('password'));
+insert into patients values
+  (1, 'Amy', 'Wong', '1978-5-4', 'F', '36 MacArthur Street', 'Frenchtown', '0749562358'),
+  (2, 'Philip', 'Fry', '1974-8-14', 'M', '1/47 Bishop Avenue', 'Allensville', '0749689523'),
+  (3, 'Hermes', 'Conrad', '1956-9-22', 'M', '357 North Road', 'Wanderer', '0749578526');

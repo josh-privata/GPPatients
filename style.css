@@ -1,0 +1,76 @@
+* {
+    border:0;
+    margin:0;
+    padding:0;
+}
+a {
+    color:#666;
+    text-decoration:none;
+}
+a:hover {
+    color:#000;
+    text-decoration:none;
+}
+body {
+    background:#ffffff;
+    color:#666;
+    font:0.8em Arial, Helvetica;
+}
+#header {
+    border-bottom:5px solid gray;
+    height:80px;
+    margin:30px auto;
+    width:750px;
+}
+#header h1 {
+    color:#555;
+    font-size:300%;
+    letter-spacing:6px;
+    text-align:right;
+    padding-bottom:2px;
+}
+#header h2 {
+    color:#888;
+    font-size:200%;
+    letter-spacing:-2px;
+    text-align:right;
+}
+#content {
+    height:auto;
+    margin:0 auto;
+    padding:0 0 20px;
+    width:750px;
+}
+#content h1 {
+    font-size:1.8em;
+    padding:20px 0 0;
+}
+#content p {
+    padding:20px 20px 0;
+}
+#footer {
+    border-top:1px solid gray;
+    height:50px;
+    margin:5% auto;
+    padding:10px;
+    text-align:center;
+    width:750px;
+}
+#footer a {
+    padding: 15px;
+}
+.error, .ad {
+    font-weight: bold;
+    color: red;
+}
+input, select, .input {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    color: black;
+    background: #FFFFFF;
+    border:1px dotted darkslategrey;
+}
+table {
+    padding-top: 25px;
+}

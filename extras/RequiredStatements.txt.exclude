@@ -1,0 +1,31 @@
+Add Patient:
+INSERT INTO patients (first_name, last_name, date_of_birth, sex, address, city, phone)
+VALUES ('$firstName', '$lastName', '$dob', '$sex', '$address', '$city', '$phone')
+
+Delete Patient:
+DELETE FROM patients WHERE patientid = '$patientid'
+
+Retrieve a Specific Patient
+SELECT * FROM patients WHERE patientid = '$patientid'
+
+Check Login Credentials:
+SELECT count(*) 
+FROM authorized_users 
+WHERE username='$name' AND password = sha1('$password')
+
+Update Patient Details:
+UPDATE patients 
+SET first_name = '$firstName',
+    last_name = '$lastName',
+    date_of_birth = '$dob',
+    sex = '$sex',
+    address = '$address',
+    city = '$city',
+    phone = '$phone'
+ WHERE patientid = '$patientid'
+ 
+Retrieve all Patients Ordered by Last Name:
+SELECT * FROM patients ORDER BY last_name
+ 
+Search for a Patient:
+SELECT * FROM patients WHERE last_name = '$search' ORDER BY last_name
