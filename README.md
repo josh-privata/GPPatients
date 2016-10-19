@@ -23,6 +23,7 @@
 - [Usage](#usage)
 - [Screenshots](#screenshots)
 - [License](#license)
+
 ## Synopsis
 A local GP Clinic currently operates a paper based system to keep records of patient details. This is a
 time consuming and work intensive task. To save time and money, management have decided to
@@ -34,16 +35,25 @@ database back end which stores all the patient details.
 Due to the sensitive nature of the information, the web based front end must be protected with
 authentication. MyCity GP Clinic currently has two staff that would require access to the system.
 
+
+**[Click here to view a demo of this website](https://www.joshcannons.com/gp/home.php)**
+
+
 ## Install
 First, make a directory to install the files to and change to that directory using :
+
 ```bash
  mkdir gppatients && cd gppatients
 ```
+
 Then all you need to do is clone the project from github into the directory by using :
+
 ```bash
  git clone https://github.com/josh-privata/GPPatients.git
 ```
+
 ## Usage
+
 **Note:**  [Nginx](https://nginx.org/en/) or [Apache](https://httpd.apache.org/download.cgi) are required to run the preceding commands.
 
 **Note:**  [MySQL](https://www.mysql.com/downloads/) or [MariaDB](https://mariadb.org/download/) are required to run the preceding commands.
